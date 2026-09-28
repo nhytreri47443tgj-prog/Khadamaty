@@ -1,0 +1,35 @@
+</div>
+      <div class="modal-body">
+        <p class="emergency-desc">توجيه أقرب فني معتمد في محافظة ميسان لحالات الأعطال المفاجئة (تسريب حاد، تماس كهربائي).</p>
+        
+        <form onsubmit="app.handleEmergencySubmit(event)">
+          <div class="form-group">
+            <label>نوع حالة الطوارئ</label>
+            <select id="emergencyType" required>
+              <option value="تماس أو انقطاع كهربائي">تماس كهربائي أو احتراق قاطع</option>
+              <option value="تسريب مياه حاد">كسر أنبوب مياه أو تسريب رئيسي</option>
+              <option value="عطل منظومة تبريد حرجة">عطل تكييف وتبريد طارئ</option>
+              <option value="صيانة أخرى مستعجلة">أمر طارئ آخر</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label>رقم هاتف الاتصال المباشر</label>
+            <input type="tel" id="emergencyPhone" required placeholder="077XXXXXXXX" value="07701234567">
+          </div>
+          <div class="form-group">
+            <label>الموقع السريع في العمارة</label>
+            <input type="text" id="emergencyLocation" required placeholder="الحي، الشارع، أقرب علامة دالة">
+          </div>
+          <button type="submit" class="btn-emergency-action">إرسال طلب الطوارئ الفوري</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- نافذة التنبيه والإشعار (Toast) -->
+  <div id="toastMessage" class="toast-popup"></div>
+
+  <!-- ملف البرمجة وتشغيل التطبيق -->
+  <script src="script.js"></script>
+</body>
+</html>

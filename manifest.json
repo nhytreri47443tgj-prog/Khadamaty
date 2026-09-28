@@ -1,0 +1,51 @@
+{
+  "id": "/khadamaty-pwa",
+  "name": "خدماتي - صيانة وخدمات منزلية",
+  "short_name": "خدماتي",
+  "description": "المنصة الأولى المعتمدة لطلب وحجز خدمات الصيانة المنزلية والطوارئ الفورية في ميسان والعمارة",
+  "lang": "ar",
+  "dir": "rtl",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#0d9488",
+  "background_color": "#ffffff",
+  "categories": ["lifestyle", "utilities"],
+  "icons": [
+    {
+      "src": "public/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "public/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "public/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "طلب طوارئ 24/7",
+      "short_name": "طوارئ",
+      "description": "طلب فني طوارئ صيانة فوري خلال 30 دقيقة",
+      "url": "./index.html#emergency",
+      "icons": [{ "src": "public/icon-192.png", "sizes": "192x192" }]
+    },
+    {
+      "name": "سجل طلباتي",
+      "short_name": "طلباتي",
+      "description": "متابعة الطلبات الجارية والفواتير",
+      "url": "./index.html#orders",
+      "icons": [{ "src": "public/icon-192.png", "sizes": "192x192" }]
+    }
+  ]
+}
